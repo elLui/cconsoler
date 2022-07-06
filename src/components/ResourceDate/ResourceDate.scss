@@ -1,6 +1,5 @@
 body {
   .resourceItem__date {
-
     display: flex;
     flex-direction: column;
     width: 5.5rem;
@@ -13,18 +12,17 @@ body {
     justify-content: center;
 
     .resourceItem__month {
-      font-size: 0.75rem;
+      font-size: 1rem;
       font-weight: bold;
     }
+
     .resourceItem__year {
       font-size: 0.75rem;
-
     }
+
     .resourceItem__day {
-      font-size: 0.75rem;
+      font-size: 1.25rem;
       font-weight: bold;
     }
-
   }
-
 }
