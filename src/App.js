@@ -1,6 +1,7 @@
 import './App.css';
 import ResourceItem from "./components/ResourceItem/ResourceItem";
 import Navbar from "./components/UI/Navbar/Navbar";
+import Resources from "./components/Resources/Resources";
 
 function App() {
     const resources = [
@@ -30,28 +31,13 @@ function App() {
     ];
 
   return (
-    <div className="app">
+    <div>
         <Navbar />
       <header className="app-container">
+          <Resources resources={resources}/>
 
 
-          <ResourceItem
-          resourceTitle = {resources[0].resource_title}
-          resourceDate = {resources[0].resource_date}
-          resourceResource = {resources[0].resource_resources}
-          />
-          <ResourceItem
-              resourceTitle = {resources[1].resource_title}
-              resourceDate = {resources[1].resource_date}
-              resourceResource = {resources[1].resource_resources}/>
-          <ResourceItem
-              resourceTitle = {resources[2].resource_title}
-              resourceDate = {resources[2].resource_date}
-              resourceResource = {resources[2].resource_resources}/>
-          <ResourceItem
-              resourceTitle = {resources[3].resource_title}
-              resourceDate = {resources[3].resource_date}
-              resourceResource = {resources[3].resource_resources}/>
+
       </header>
     </div>
   );
