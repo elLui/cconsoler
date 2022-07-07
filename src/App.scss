@@ -1,38 +1,44 @@
-//.App {
-//  text-align: center;
-//}
-//
-//.App-logo {
-//  height: 40vmin;
-//  pointer-events: none;
-//}
-//
-//@media (prefers-reduced-motion: no-preference) {
-//  .App-logo {
-//    animation: App-logo-spin infinite 20s linear;
-//  }
-//}
-//
-//.App-header {
-//  background-color: #282c34;
-//  min-height: 100vh;
-//  display: flex;
-//  flex-direction: column;
-//  align-items: center;
-//  justify-content: center;
-//  font-size: calc(10px + 2vmin);
-//  color: white;
-//}
-//
-//.App-link {
-//  color: #61dafb;
-//}
-//
-//@keyframes App-logo-spin {
-//  from {
-//    transform: rotate(0deg);
-//  }
-//  to {
-//    transform: rotate(360deg);
-//  }
-//}
+$palettes: (
+        blue-grey: (
+                50: #ECEFF1,
+                100: #CFD8DC,
+                200: #B0BEC5,
+                300: #90A4AE,
+                400: #78909C,
+                500: #607D8B,
+                600: #546E7A,
+                700: #455A64,
+                800: #37474F,
+                900: #263238,
+        ),
+        blue: (
+                100: #E3F2FD,
+                200: #BBDEFB,
+                300: #90CAF9,
+                400: #64B5F6,
+                500: #42A5F5,
+                600: #2196F3,
+                700: #1E88E5,
+                800: #1976D2,
+                900: #1565C0,
+                A100: #0D47A1,
+                A200: #82B1FF,
+                A400: #448AFF,
+                A700: #2979FF,
+        ),
+);
+
+:root {
+  @each $colorname, $palette in $palettes {
+    @each $key, $value in $palette {
+      $keyname: "--palette-" + $colorname + "-" + $key;
+      #{$keyname}: #{$value};
+    }
+  }
+};
+
+body {
+  background-color: var(--palette-blue-900);
+}
+
+
