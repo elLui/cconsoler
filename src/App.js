@@ -1,5 +1,6 @@
 import './App.css';
 import ResourceItem from "./components/ResourceItem/ResourceItem";
+import Navbar from "./components/UI/Navbar/Navbar";
 
 function App() {
     const resources = [
@@ -28,14 +29,10 @@ function App() {
         },
     ];
 
-
-
-
-
-
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+        <Navbar />
+      <header className="app-container">
 
 
           <ResourceItem
