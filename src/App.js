@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/UI/Navbar/Navbar";
 import Resources from "./components/Resources/Resources";
 import NewResource from "./components/NewResource/NewResource";
+// import AnimatedCursor from "react-animated-cursor";
 
 function App() {
     const resources = [
@@ -47,8 +48,23 @@ function App() {
     return (
         <div>
             <Navbar/>
-            <NewResource />
-            <Resources items={resources} />
+            <NewResource/>
+            {/*<AnimatedCursor*/}
+            {/*    color="255,255,255"*/}
+            {/*    innerSize={8}*/}
+            {/*    outerSize={35}*/}
+            {/*    innerScale={1}*/}
+            {/*    outerScale={1.7}*/}
+            {/*    outerAlpha={0}*/}
+            {/*    outerStyle={{*/}
+            {/*        border: '3px solid #fff'*/}
+            {/*    }}*/}
+            {/*/>*/}
+
+
+            <Resources items={resources}/>
+
+
         </div>
     );
 }
