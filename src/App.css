@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Righteous&display=swap");
+:root {
+  --palette-blue-grey-50: #ECEFF1;
+  --palette-blue-grey-100: #CFD8DC;
+  --palette-blue-grey-200: #B0BEC5;
+  --palette-blue-grey-300: #90A4AE;
+  --palette-blue-grey-400: #78909C;
+  --palette-blue-grey-500: #607D8B;
+  --palette-blue-grey-600: #546E7A;
+  --palette-blue-grey-700: #455A64;
+  --palette-blue-grey-800: #37474F;
+  --palette-blue-grey-900: #263238;
+  --palette-blue-100: #E3F2FD;
+  --palette-blue-200: #BBDEFB;
+  --palette-blue-300: #90CAF9;
+  --palette-blue-400: #64B5F6;
+  --palette-blue-500: #42A5F5;
+  --palette-blue-600: #2196F3;
+  --palette-blue-700: #1E88E5;
+  --palette-blue-800: #1976D2;
+  --palette-blue-900: #1565C0;
+  --palette-blue-A100: #0D47A1;
+  --palette-blue-A200: #82B1FF;
+  --palette-blue-A400: #448AFF;
+  --palette-blue-A700: #2979FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--palette-blue-900);
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,25 @@
+body .resourceItem__date {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid cornflowerblue;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+body .resourceItem__date .resourceItem__month {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body .resourceItem__date .resourceItem__year {
+  font-size: 0.75rem;
+}
+body .resourceItem__date .resourceItem__day {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=ResourceDate.css.map */

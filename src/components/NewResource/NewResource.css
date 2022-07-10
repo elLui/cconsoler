@@ -1,0 +1,40 @@
+.new-resource-form {
+  background-color: var(--palette-blue-grey-800);
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 75vw;
+  max-width: 95vw;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-resource button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 2px solid var(--palette-blue-grey-800);
+  background-color: var(--palette-blue-grey-400);
+  color: var(--palette-blue-50);
+  border-radius: 12px;
+  margin-right: 2rem;
+}
+
+.new-resource button:hover,
+.new-resource button:active {
+  background-color: var(--palette-blue-300);
+  border-color: var(--palette-blue-900);
+}
+
+.new-resource button.alternative {
+  color: var(--palette-blue-grey-300);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.new-resource button.alternative:hover,
+.new-resource button.alternative:active {
+  background-color: var(--palette-blue-grey-900);
+}
+
+/*# sourceMappingURL=NewResource.css.map */
