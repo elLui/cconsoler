@@ -1,0 +1,21 @@
+/* Clock */
+.clock {
+  font-size: 28px;
+  font-family: monospace;
+  width: 60vh;
+  height: 10vh;
+  border: 3px solid greenyellow;
+  padding: 10px;
+  background-color: black;
+  color: lightcoral;
+  background-size: cover;
+  margin: auto;
+}
+
+.clock p {
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=RawTime.css.map */
