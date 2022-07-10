@@ -1,9 +1,19 @@
 import "./App.css";
 
 import Navbar from "./components/UI/Navbar/Navbar";
-import Resources from "./components/Resources/Resources";
 import NewResource from "./components/NewResource/NewResource";
-// import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from "react-animated-cursor";
+import Time from "./components/Clocks/Time/Time";
+import Resources from "./components/Resources/Resources";
+import Clock from "./components/Clocks/RawTime/RawTime";
+import StickySliderNavigation from "./components/UI/Navbar/StickSliderNavigation/StickyNavigation";
+import {Component} from "@types/react";
+
+class StickyNavigation extends Component {
+    render() {
+        return null;
+    }
+}
 
 function App() {
     const resources = [
@@ -47,8 +57,9 @@ function App() {
 
     return (
         <div>
-            <Navbar/>
-            <NewResource/>
+
+            <StickyNavigation />
+            {/*<NewResource/>*/}
             {/*<AnimatedCursor*/}
             {/*    color="255,255,255"*/}
             {/*    innerSize={8}*/}
@@ -60,9 +71,13 @@ function App() {
             {/*        border: '3px solid #fff'*/}
             {/*    }}*/}
             {/*/>*/}
+            {/*<Time />*/}
+            {/*<Resources items={resources}/>*/}
+
+            <Clock/>
 
 
-            <Resources items={resources}/>
+
 
 
         </div>
